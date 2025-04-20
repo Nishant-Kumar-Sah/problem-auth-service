@@ -9,11 +9,13 @@ const UserSchema = new Mongoose.Schema({
     },
     UserName: {
         type: String,
-        required: [true, 'Username Cannot be empty']
+        required: [true, 'Username Cannot be empty'],
+        unique: true
     },
     Email : {
         type: String,
-        required: [true, "Email Cannot be empty"]
+        required: [true, "Email Cannot be empty"],
+        unique: true
     },
     Password: {
         type: String,

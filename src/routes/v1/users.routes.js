@@ -4,6 +4,7 @@ const { UserController } = require('../../controllers/index');
 const UserRouter = express.Router();
 
 UserRouter.get('/ping',UserController.pingController); 
+UserRouter.post('/signup',UserController.signup)
 // UserRouter.get('/:id', UsertController.getUser);
 // UserRouter.get('/', UsertController.getAllUsers);
 // UserRouter.post('/',UsertController.addUser)
